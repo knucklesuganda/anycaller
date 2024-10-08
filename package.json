@@ -1,0 +1,15 @@
+{
+    "name": "anycall-solidity",
+    "scripts": {
+        "test_deploy": "npx hardhat deploy --network hardhat"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "hardhat": "^2.22.12"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.0.2",
+        "hardhat-deploy": "^0.12.4"
+    }
+}
