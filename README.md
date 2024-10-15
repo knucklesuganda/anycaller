@@ -8,6 +8,14 @@ AnyCall is a Solidity project that enables chaining multiple contract calls into
 - Gas Optimization: By bundling several operations into a single transaction, users can potentially save on gas fees.
 - Ease of Use: Provides a simple interface to execute sequential calls, even when interacting with different contracts.
 
+
+## Local installation
+
+- `npm install`
+- `npx hardhat deploy`
+- `npx hardhat test`
+
+
 ## Functions:
 - execute(address[] targets, bytes[] data): Executes multiple contract calls in sequential order. It ensures the same number of targets and calldata arrays, reverting the transaction in case of failure. If your function has no inputs, provide 0x as data for the corresponding address.
 

@@ -1,21 +1,7 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
-import { AnyCall } from "../typechain-types/AnyCall";
-import { TestContract } from "../typechain-types";
-
-
-async function deployTestContracts(numberOfContracts: number): Promise<TestContract[]>{
-    let contracts = [];
-    
-    for(let i = 0; i < numberOfContracts; i++){
-        const TestContractFactory = await ethers.getContractFactory("TestContract");
-        const testContract = await TestContractFactory.deploy();
-        await testContract.waitForDeployment();
-        contracts.push(testContract);
-    }
-
-    return contracts;
-}
+import { AnyCall } from "../contracts/typechain-types/AnyCall";
+import { deployTestContracts } from "./functions";
 
 
 describe("AnyCall", function () {

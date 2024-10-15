@@ -1,15 +1,22 @@
 {
-    "name": "anycall-solidity",
+    "name": "anycaller-monorepo",
+    "version": "1.0.0",
+    "private": false,
+    "workspaces": [
+        "contracts",
+        "ether-lib"
+    ],
     "scripts": {
         "test_deploy": "npx hardhat deploy --network hardhat"
     },
     "devDependencies": {
         "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
         "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-        "hardhat": "^2.22.12"
+        "@types/jest": "^29.5.13",
+        "hardhat": "^2.22.13",
+        "hardhat-deploy": "^0.12.4"
     },
     "dependencies": {
-        "@openzeppelin/contracts": "^5.0.2",
-        "hardhat-deploy": "^0.12.4"
+        "@openzeppelin/contracts": "^5.0.2"
     }
 }
